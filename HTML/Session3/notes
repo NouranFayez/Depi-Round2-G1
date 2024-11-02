@@ -1,0 +1,11 @@
+input ==> types : text , email , password , range , color , date ... , radio , checkbox , url , file 
+input ==> [type , name (required) ] , id , maxlength , minlength , [max , min ==> range] , value ,
+          placeholder , autocomplete , autofocus , disabled , readonly
+label ==> for
+textarea ==> rows , cols , placeholder , name , value ,  autofocus , disabled , readonly
+
+
+form ==> method , autocomplete , action ==> search
+
+ datalist ==> search
+
