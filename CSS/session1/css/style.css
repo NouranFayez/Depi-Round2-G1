@@ -1,0 +1,109 @@
+/* universe style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* h3{
+    color: blue;
+}
+
+#h2-text{
+    color: brown;
+}
+
+.h2-style{
+    background-color:lightblue ;
+    color: goldenrod;
+}
+
+
+p{
+    color: red;
+} */
+
+
+
+.div-style{
+    color: brown;
+    background-color: lightgrey;
+    width: 40%;
+    /* padding-top: 8px;
+    padding-left: 19px;
+    padding-bottom: 4px;
+    padding-right: 10px;
+    padding: 8px 10px 4px 19px;
+    padding: 20px 40px;
+    padding: 20px 40px 50px; */
+    padding: 30px;
+    /* margin-left , margin-right , margin-top, margin-bottom */
+    /* margin-left: 53%; */
+    /* margin: 3%; */
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0px auto;
+    text-align: center;
+
+    /* border-top-width: 5px; */
+    /* border-top-color: black; */
+    /* border-top-style: solid; */
+    /* border-top: 3px solid black; */
+    /* border-bottom: 3px solid blue; */
+    border: solid 3px brown;
+    border-radius: 10px;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px; */
+    display: inline-block;
+}
+
+.div-style a{
+    background-color: black;
+    color: white;
+    padding: 3%;
+    margin: 4%;
+    display: inline-block;
+    width: 50%;
+    /* none , line-through , overline , underline(default) */
+    text-decoration: none;
+}
+
+input{
+    margin: 3%;
+    padding: 1%;
+    border: 2px solid brown;
+    border-radius: 10px;
+}
+
+.w-50{
+    width: 50%;
+}
+.text-blue{
+    color: blue;
+}
+.bg-lightcyan{
+    background-color: lightcyan;
+}
+
+/* body{
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+}
+
+body , p , h2{
+    margin: 0;
+    padding: 0;
+} */
+
+

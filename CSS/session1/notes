@@ -1,0 +1,17 @@
+-- inserting css ==> - inline sheet
+                     - inline style
+                     - External Sheet
+
+
+-- css selector {
+  property : value ;
+}  
+
+
+-- id , class
+
+-- priority style ==> inline style , id , class , tag name
+
+-- border ==> width , style , color
+
+-- display ==> block , inline , inline-block 

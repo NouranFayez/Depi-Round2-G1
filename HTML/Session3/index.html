@@ -61,7 +61,7 @@
         <br>
 
         <label>ID image</label>
-        <input type="file" name="idImg" multiple>
+        <input type="file" name="idImg" multiple accept="image/*">
         <!-- accept ==> search -->
         <br>
 
@@ -83,6 +83,10 @@
         <input type="range" name="range" step="25" value="50" min="100" max="200" id="">
 
         <br>
+
+        <input type="tel" pattern="^01[0125][0-9]{8}" placeholder="phone">
+
+        <input type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" name="" id="">
 
 
         <input type="submit" value="Login">
