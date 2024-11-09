@@ -1,0 +1,105 @@
+/* Reset Style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* global style */
+.container{
+    width: 80%;
+    margin: auto;
+}
+.overlay{
+    background: #00000099;
+    height: 100%;
+}
+.w-75{
+    width: 75%;
+}
+
+.custom-padding{
+    padding: 5% 0;;
+}
+.bg-light{
+    background-color: #d3d1d1;
+}
+.text-center{
+    text-align: center;
+}
+.w-100{
+    width: 100%;
+}
+.clear{
+    clear: both;
+}
+/* Custom style */
+
+header{
+    background-color: blue;
+    color: white;
+}
+nav h2{
+    display: inline-block;
+}
+
+nav ul{
+    list-style: none ;
+    float: right;
+}
+nav li{
+    display: inline-block;
+}
+
+
+
+.bg-img{
+    background-image: url(../images/beautiful-natural-view-landscape_23-2150787996.avif) ;
+    /* height: 400px; */
+    /* repeat (default) , repeat-x , repeat-y*/
+    /* background-repeat: no-repeat; */
+    background-color: black;
+    /* left (default) , center , right */
+    background-position-x: center;
+    /* top (default) , center , bottom */
+    background-position-y: center;
+    background-position: center top;
+    background-position-x: center;
+    background-size: 100% 100%;
+    color: white;
+    text-align: center;
+}
+
+
+.bg-img h3{
+    margin-bottom: 3%;
+}
+.bg-img button{
+    background: transparent;
+    border: 2px solid white;
+    margin-top: 2%;
+    padding: 1%;
+    color: white;
+    border-radius: 5px;
+}
+
+#services .card{
+    width: 30%;
+    border: 1px solid ;
+    color: blue;
+    float: left;
+}
+
+#services .card img{
+    width: 100%;
+}
+
+
+#about .card{
+
+}
+
