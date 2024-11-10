@@ -1,0 +1,3 @@
+-- position ==> static (default) , fixed , sticky , relative , absolute
+
+-- top , left , right , bottom . z-index

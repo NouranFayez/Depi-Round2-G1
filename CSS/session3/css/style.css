@@ -1,0 +1,166 @@
+/* Reset style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* global style */
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.d-inline-block{
+    display: inline-block;
+}
+.float-right{
+    float: right;
+}
+
+.bg-black{
+    background-color: black;
+}
+.text-white{
+    color: white;
+}
+.custom-padding{
+    padding: 5% 0;
+}
+
+/* custom style */
+nav{
+    padding: 1% 0%;
+    /* position: fixed; */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+nav a{
+    color: white;
+}
+
+.custom-height{
+    height: 1000px;
+   
+}
+.bg-gray{
+    background-color: lightgray;
+}
+.bg-gold{
+    background-color: goldenrod;
+}
+.bg-blue{
+    background-color: lightblue;
+}
+
+#contact-section .card{
+    width: 50%;
+    border: 2px solid ;
+    padding: 1%;
+    margin: 3% auto;
+}
+
+#contact-section .card img{
+    width: 100%;
+}
+
+.overlay{
+    background-color: rgb(0 0 0 / 51%);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 100%;
+}
+.square{
+    width: 50px;
+    height: 50px;
+    background-color: darkgoldenrod;
+    position: absolute;
+    top: 0;
+    right: 100%;
+}
+.position-relative{
+    position: relative
+}
+
+#blogs-section .card{
+    width: 40%;
+    padding: 2%;
+    margin: 3% auto;
+    /* box-shadow : x-shadow y-shadow blur spread color */
+    box-shadow: 0px 0px 10px 3px lightgrey;
+    display: inline-block;
+    margin-right: 2%;
+}
+
+#blogs-section .card button{
+    background: darkgoldenrod;
+    color: white;
+    margin-top: 6%;
+    font-size: 18px;
+    padding: 1% 4%;
+    border-width: 4px;
+    border-style: double;
+    border-color: black;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+#blogs-section .card button:hover{
+    background-color: transparent;
+    color: black;
+}
+
+/* #blogs-section .card h2:hover{
+    color: red;
+} */
+
+#blogs-section .card:hover h2{
+    color: blue;
+}
+
+.custom-icon{
+    color: red;
+    font-size: 25px;
+    border: 2px solid;
+    padding: 2%;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+}
+
+.custom-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+     
+}
+
+input{
+    border: 0;
+    border-bottom: 2px solid;
+}
+
+#top-btn{
+    font-size: 30px;
+    position: fixed;
+    bottom: 4%;
+    right: 3%;
+}
+
