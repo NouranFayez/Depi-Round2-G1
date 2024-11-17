@@ -1,0 +1,58 @@
+/* Rule type condition   */
+
+/* rule ==>  @media */
+
+/* type ==> all , screen , print , speetch */
+
+/* condition ==> max-width , min-width , range */
+
+/* 400 */
+
+ /* 0 : 767.98 */
+ /* // `md` applies to small devices (landscape phones, less than 768px) */
+ @media (max-width: 767.98px) { 
+    .card {
+        width: 50%;
+    }
+    .d-flex{
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+    }
+    .hidden-element-sm{
+        display: none;
+    }
+ }
+
+/* 0 : 575.98 */
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .card {
+        width: 100%;
+    }
+    .hidden-element-sm{
+        display: block;
+    }
+  
+ }
+
+/* 390 up to */
+@media (min-width:390px){
+    .d-flex{
+        background-color: lightblue;
+    }
+}
+
+
+@media (min-width:400px) and (max-width:600px){
+    .d-flex{
+        background-color: coral;
+    }
+}
+
+
+/* @media print{} */
+
+
+/* https://getbootstrap.com/docs/5.3/layout/breakpoints/ */
+
+/* world-template ==>  https://preview.colorlib.com/theme/world/ */

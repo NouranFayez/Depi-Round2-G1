@@ -1,0 +1,205 @@
+/* Reset style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* global style */
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+
+.padding-top-bottom{
+    padding: 3% 0%;
+}
+.d-flex{
+    display: flex;
+}
+
+/* custom Style */
+.custom-input{
+    border: 2px solid gray;
+    color: blue;
+}
+.custom-input:focus{
+    border-color: blue ;
+    outline: none ;
+}
+.custom-input:disabled{
+    background-color: aquamarine;
+    border-color: maroon;
+}
+
+input:checked{
+    width: 30px;
+    height: 30px;
+}
+
+button:focus{
+    background-color: black ;
+    color: white;
+}
+
+a:link{
+    color: red;
+}
+a:visited{
+    color: goldenrod;
+}
+a:active{
+    color: black;
+}
+
+#unordered-list li:first-child{
+    color: red;
+}
+#unordered-list li:last-child{
+    background-color: lightblue;
+}
+#unordered-list li:nth-child(3){
+    color: green ;
+}
+
+#ordered-list li:first-child{
+    color: blue;
+}
+
+table , th , td{
+    border: 2px solid lightgray;
+}
+
+table{
+    border-collapse: collapse;
+    width: 40%;
+    margin-top: 2%;
+}
+
+th , td{
+    padding: 1%;
+}
+
+table tr:first-child{
+    background-color: teal;
+    color: white;
+}
+
+/* tr:nth-child(3) , tr:nth-child(5) , tr:nth-child(7){
+    background-color: #eee;
+} */
+ tr:nth-child(odd){
+    background-color: #eee;
+ }
+ tr:nth-child(even){
+    background-color: darkkhaki
+ }
+/* table th{
+    background-color: teal;
+    color: white;
+} */
+
+h2::first-letter{
+    color: blue;
+    font-size: 35px;
+}
+
+h2::first-line{
+    color: red;
+}
+
+
+li::marker{
+    color: green;
+}
+
+::placeholder{
+    color: red;
+}
+
+::selection{
+    background-color: darkgoldenrod;
+    color: white;
+}
+
+textarea{
+    resize: none;
+}
+
+.custom-before-after{
+    width: 40%;
+    background-color: #eee;
+    margin: 3% auto;
+    padding: 3%;
+    position: relative;
+
+}
+
+/* before /after ==> text */
+.custom-before-after h1::before , .custom-before-after h1::after{
+    content: "Frontend";
+    background: darkcyan;
+    color: white;
+    /* width: 40%; */
+    /* height: 40px; */
+    padding: 3%;
+    /* margin: 3%; */
+    display: block;
+    border-right: 4px solid red;
+
+}
+    /* before / after ==> shap */
+.custom-before-after::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+}
+    /* before / after ==> icon */
+.custom-before-after::after{
+    font-family: 'Font Awesome 6 Free';
+    content: '\f007';
+    font-size: 40px;
+    color: red;
+}
+
+
+nav ul{
+    list-style: none;
+}
+.dropdown-menu{
+    position: relative;
+}
+
+nav .dropdown{
+    display: none;
+    position: absolute;
+}
+
+.dropdown-menu:hover .dropdown{
+    display: block;
+}
+
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+
+.custom-margin{
+    margin: 3% 0%;
+}
+
+.card{
+    width: 30%;
+    padding: 2%;
+    box-shadow: 0px 0px 6px 5px lightgray;
+}
+
+
+
