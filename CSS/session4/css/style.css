@@ -1,0 +1,119 @@
+/* Reset Style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+}
+
+a{
+    text-decoration: none ;
+}
+ul{
+    list-style:none;
+}
+
+/* global style */
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.bg-light{
+    background-color: rgb(228, 227, 227);
+}
+
+.custom-padding{
+    padding: 3% 0%;
+}
+.d-flex{
+    display: flex;
+    /* height: 1000px;
+    background: bisque ; */
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.align-self-start{
+    align-self: flex-start;
+}
+.bg-dark{
+    background-color: black;
+}
+.text-white{
+    color: white;
+}
+.align-items-center{
+    align-items: center;
+}
+
+
+/* custom style */
+
+
+nav ul{
+   width: 26%;
+}
+nav h2{
+    font-size: 40px;
+}
+.custom-flex-box{
+    /* justify-content: start (default) , center , end , space-between , space-around , space-evenly ; */
+    justify-content: space-between;
+    /* flex-direction: row (default) , row-reverse , column , column-reverse ; */
+    /* flex-wrap: nowrap(default) , wrap; */
+    flex-wrap: wrap;
+    /* flex-flow ==> flex-direction + flex-wrap; */
+    flex-flow: wrap row;
+    /* align-items==> stretch(default) , flex-start , flex-end , center */
+    align-items: center;
+    /* align-content ==> flex-start , flex-end ,center , space-between , space-around , spcae-evenly */
+    align-content: space-evenly;
+}
+.card{
+    padding: 2%;
+    box-shadow: 0px 0px 7px 5px rgb(173, 173, 173);
+    width: 30%;
+    font-size: 19px;
+}
+
+.hidden-element{
+    display: none;
+    /* visible(default) */
+    visibility: hidden;
+    /* 0 : 1 */
+    opacity: 0;
+}
+
+.overlow-auto{
+    height: 164px;
+    /* hidden , auto  */
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.card a{
+    font-size: 20px;
+}
+.card p {
+    line-height: 2;
+    font-weight: bold;
+    /* text-transform ==> capitalize , uppercase , lowercase */
+    text-transform: uppercase;
+   
+}
+
+.card i{
+    width: 60px;
+    height: 60px;
+    border: 2px solid;
+    font-size: 20px;
+    text-align: center;
+    /* line-height: 2.8; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
