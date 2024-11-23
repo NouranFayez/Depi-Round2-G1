@@ -1,0 +1,183 @@
+/* Reset style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+/* Global style */
+.container{
+    width: 90%;
+    margin: auto;
+}
+.d-flex{
+    display: flex;
+}
+.margin-top-bottom{
+    margin: 3% 0;
+}
+
+
+
+
+/* Custom style */
+
+.card{
+    width: 30%;
+    box-shadow: 0px 0px 5px 5px lightgray;
+    padding: 1%;
+    /* transition-duration:5s ; */
+    /* default ==> all */
+    /* transition-property: background; */
+    /* transition-timing-function: linear; */
+    /* transition-delay: 2s; */
+    /* background-color: lightblue; */
+
+    /* transition ==> duration , property , timing function */
+    transition: 1s linear all;
+}
+
+
+/* .card:hover{
+    width: 100%;
+    background-color: black;
+    color: white;
+} */
+
+.custom-transform{
+    background-color: lightgray;
+    margin-right: 2%;
+}
+.custom-transform:hover{
+    transform: translateX(50%);
+    transform: translateX(-50%);
+    transform: translateX(200px);
+    transform: translateY(50%);
+    transform: translateY(-50%);
+    transform: translate(50% , 50%);
+
+    transform: rotate(50deg);
+    transform: rotate(-50deg);
+
+    transform: skewX(40deg);
+    transform: skewY(40deg);
+
+    transform: scaleX(1.5);
+    transform: scaleX(.5);
+    transform: scaleX(0);
+    transform: scaleX(1);
+
+    transform: scaleY(1.5);
+    transform: scaleY(0.5);
+
+    transform: scale(1.5);
+
+    /* matrix ==> scaleX , skewY , skewX , scaleY , translateX , translateY */
+    transform: matrix(0.9 , 0 , 0 , 1.5 , 400 , 300);
+
+}
+
+.custom-card{
+    width: 30%;
+    box-shadow: 0px 0px 5px 6px lightgray;
+}
+
+.custom-card img{
+    width: 100%;
+    transition: 1s;
+}
+
+.custom-card:hover img{
+    /* transform: rotate(10deg);
+    transform: scale(1.5); */
+    transform: rotate(10deg) scale(1.4);
+}
+
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+.custom-filter-card{
+    width: 30%;
+    box-shadow: 0px 0px 5px 6px lightgray;
+    margin-left: 3%;
+}
+
+.custom-filter-card img{
+    width: 100%;
+    transition: 1s;
+}
+
+.custom-filter-card:hover img{
+    filter: blur(1.5px);
+    filter: contrast(2);
+    filter: grayscale(1);
+    filter: brightness(1.6);
+    filter: opacity(0.5);
+
+    /* filter ==> drop-shadow ==> png image */
+}
+
+
+.custom-animation{
+    width: 60px;
+    height: 60px;
+    background-color: lightcoral;
+    animation-name: changeBgColor ;
+    animation-duration: 5s;
+    /* number / inifinite */
+    animation-iteration-count: infinite;
+    /* animation-delay: 4s; */
+    /* normal : 0: 100 */
+    /* reverse : 100% : 0% */
+    /* alternate ==> 0 : 100% - 100% : 0% */
+    /* alternate-reverse ==> 100% : 0% - 0% : 100% */
+    animation-direction: alternate-reverse;
+    animation-timing-function:linear ;
+
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+
+}
+
+
+
+@keyframes changeBgColor {
+    /* from{
+        background-color: darkgoldenrod;
+    }
+    to{
+        background-color: lightgreen;
+    } */
+    0%{
+        background-color: darkgoldenrod;
+    }
+    25%{
+        background-color: darkgray;
+        transform: translateX(200px);
+        border: 4px solid darkblue;
+     }
+     50%{
+        background-color: lightseagreen;
+        transform: translate(200px , 200px);
+     }
+     75%{
+        background-color: darksalmon;
+        transform: translate(0px , 200px);
+     }
+     100%{
+        background-color: darkred;
+     }
+}
+
+
+
+/* https://css-tricks.com/almanac/properties/l/line-clamp/ */
