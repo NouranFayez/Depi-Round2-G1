@@ -1,0 +1,7 @@
+-- data types ==> string , number , boolean , undefined , null , NaN ==> Not a Number
+
+-- operations ==> Mathematical Operators (Arthematic) : + - / * ** %  ++ --
+                  Assignment operator (shortcut) : += ,-= , /= *= , **=
+                  Comparison Operator :( > , >= , < , <= , == , === , != , !== ) ==> return boolean type
+
+-- Js ==> camelCase
