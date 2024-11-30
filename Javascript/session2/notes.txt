@@ -1,0 +1,18 @@
+-- operators ==> unary operator ==> typeof
+                 logical Operator ==> (&&  || !)
+                 ternary operator ==> (condition) ? true : false 
+
+-- if condition
+-- switch case
+-- falsy / truthy value
+-- looping ==>  for , while , do-while (search)  
+
+-- function : block of code ==> name 
+                                logic
+                                parameters 
+                                return value
+                                call function
+
+
+---  https://digitaltemplatemarket.com/wp/tradex-premium/
+-- https://digitaltemplatemarket.com/wp/tradex-premium/contact/                                

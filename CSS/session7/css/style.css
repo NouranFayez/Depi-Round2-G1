@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* global style */
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.margin-top-bottom {
+    margin: 3% 0;
+}
+
+/* Custom style */
+
+.custom-div p {
+    color: red;
+}
+
+.custom-div>h4 {
+    color: blue;
+}
+
+.custom-div+h2 {
+    color: darkorange;
+}
+
+.custom-div~h2 {
+    border: 2px solid;
+}
+
+.custom-div:hover+h2 {
+    background-color: lightgreen;
+}
+
+
+input[name] {
+    border: 2px solid blue;
+}
+
+input[name=userEmail] {
+    background-color: lightgray;
+}
+
+
+a[href*=page] {
+    color: red;
+    font-size: 25px;
+}
+
+a[href^=http] {
+    color: green;
+}
+
+a[href$=html] {
+    color: darkgoldenrod;
+
+}
+
+/* .custom-div-style{
+    background-color: lightgray;
+    width: 50%;
+    padding: 1%;
+}
+
+.custom-div-style p{
+    color: red;
+}
+
+.custom-div-style p a {
+    color: darkgoldenrod;
+    font-size: 30px;
+} */
+
+.custom-div-style {
+    background-color: lightgray;
+    width: 50%;
+    padding: 1%;
+
+    & p {
+        color: red;
+
+        & > a {
+            color: darkgoldenrod;
+            font-size: 30px;
+            &:hover{
+              color: black;  
+            }
+        }
+    }
+}
+
+
+
+.custom-en-div{
+    width: calc(100% - 70%);
+    background-color: lightgray;
+    margin-left: auto;
+}
+
+
+
+/* background-image ==> url()  , linear-gradient() , radial-gradient()*/
+/* box-reflect ==>  */
+/* calc() */
+/* grid ==> bootstrap */
+

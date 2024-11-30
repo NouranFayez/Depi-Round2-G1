@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    text-align: right;
+}
+
+.custom-ar-div{
+    width: 30%;
+    background-color: lightgray;
+    margin-right: auto;
+}
