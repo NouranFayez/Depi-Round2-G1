@@ -32,7 +32,7 @@ str = str.trim()
 // console.log(str.replace("lorem" , "Html"))
 // console.log(str.replaceAll("lorem" , "Js"))
 
-/// slice , startsWith , endsWith , uppercase , lowerCase
+/// slice , startsWith , endsWith , uppercase , lowerCase 
 
 var str2 = "html"
 // console.log(str2[0])
