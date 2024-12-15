@@ -1,0 +1,14 @@
+.card {
+    width: 30%;
+    display: inline-block;
+    background-color: lightgray;
+    margin-right: 2%;
+}
+
+.tabs-content{
+    display: none;
+}
+
+.active{
+    display: block;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form id="myForm">
+        <input type="text" placeholder="enter UserName" id="userName">
+        <input type="text" placeholder="enter userID" id="userID">
+        <input type="text" placeholder="enter userBalance" id="userBalance">
+        <button>Add User</button>
+    </form>
+
+    <table border="3" >
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Balance</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="table-id">
+
+        </tbody>
+       
+    </table>
+
+    <hr>
+
+    <button onclick="handleShowTab('tab-1')">tab 1</button>
+    <button onclick="handleShowTab('tab-2')">tab 2</button>
+    <button onclick="handleShowTab('tab-3')">tab 3</button>
+
+    <div class="tabs-content active" id="tab-1">
+        content of tab 1
+    </div>
+    <div class="tabs-content" id="tab-2">
+        content of tab 2
+    </div>
+    <div class="tabs-content" id="tab-3">
+        content of tab 3
+    </div>
+
+    <script src="js/bank.js"></script>
+</body>
+</html>
