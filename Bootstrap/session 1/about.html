@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Bootstrap</h2>
+    </div>
+    <div class="container-lg">
+        <h2>bootstrap lg</h2>
+    </div>
+
+    <!-- row ==> display :flex , flex-wrap : wrap  = 12 col -->
+    <!--12 col -->
+
+    <!-- breakpoints ==>  sm , md , lg ,xl ,xxl -->
+
+   <div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-primary">
+            Lorem ipsum dolor sit amet consectetur
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 bg-warning">
+          <div class="row">
+            <div class="col-6">
+                row inside col-6
+            </div>
+            <div class="col-6">
+                row inside col-6
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+            Lorem ipsum dolor sit amet consectetur
+        </div>
+        <div class="col-8">
+            <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est magnam enim sit qui quo odio eveniet iure
+                beatae blanditiis, porro ex atque quaerat numquam? Amet officiis accusamus tenetur a sequi!</h5>
+        </div>
+        <div class="col-4">
+            <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, maxime?</h2>
+        </div>
+    </div>
+   </div>
+   <hr>
+
+   <div class="container">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
+        <div class="col bg-warning ">
+            <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, non.</h2>
+        </div>
+        <div class="col bg-info">
+            <h2>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, doloribus!
+            </h2>
+        </div>
+        <div class="col bg-danger">
+            <h2>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, doloribus!
+            </h2>
+        </div>
+    </div>
+   </div>
+
+   <hr>
+
+
+   <!-- offset-num ==> extra small -->
+    <!-- offset-breakpoint-num -->
+   <div class="container">
+    <div class="row justify-content-between">
+        <h3 class="col-auto bg-danger">About Us</h3>
+        <h3 class="col-auto bg-success">About Us</h3>
+    </div>
+    <div class="row">
+      
+        <div class="col-12 col-md-4 bg-info">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+        </div>
+        <div class="col-12 col-md-3  offset-md-5 bg-warning">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+        </div>
+        <div class="col-3">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, sed!
+        </div>
+    </div>
+   </div>
+
+
+
+
+    <!-- popper js + bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
