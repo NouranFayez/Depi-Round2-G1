@@ -1,0 +1,6 @@
+-- install node js
+-- install angular cli (command line interface) ==> npm i -g @angular/cli
+-- create App ==> ng new appName --standalone=false
+-- install bootstrap => npm i boottsrap
+-- run my app ==> ng serve -open (ng s -o)
+-- create component ==> ng generate component folderName/componentName (ng g c folderName/ComponentName)
