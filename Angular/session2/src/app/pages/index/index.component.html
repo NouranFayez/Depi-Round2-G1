@@ -1,1 +1,56 @@
-<p>index works!</p>
+
+
+<!-- {{}} -->
+<!-- <h1>{{appName}}</h1>
+
+<h2>{{100 + 20}}</h2>
+
+<h3>{{num1 + num2}}</h3>
+
+<h4>{{getFullName("Zain" , "Fayez")}}</h4>
+
+<img src="{{imgPath}}" alt=""> -->
+
+
+
+<!-- property binding -->
+
+<!-- <input [type]="inputType" [disabled]="disabledInput"> -->
+
+
+<!-- <p [innerText]="paragraphContent"></p>
+<p [innerHTML]="spanTag"></p>
+
+<div [class]="classStyle">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum soluta ducimus quaerat, hic quis omnis quisquam. Iure, explicabo tenetur. Dolorum, ratione deserunt? Reiciendis laboriosam saepe quae, odit iure esse dolor.
+</div>
+
+<button class="btn btn-primary" [attr.data-bs-toggle]='modal'>Open Modal</button> -->
+
+
+<!-- event binding -->
+
+<button class="btn btn-danger" (click)="handleClick()">
+    click here
+</button>
+
+<input type="text" class="form-control w-50" #userName 
+(input)="handleInput($event)" placeholder="enter your Name">
+<h3>{{inputValue}}</h3>
+
+<!-- Template Reference -->
+<input type="text" placeholder="enter your email" #userEmail id="userEmail" 
+class="form-control w-50" (input)="handleInputElement(userEmail , userName)" (keyup.enter)="handleKey()">
+
+<!-- two way binding [(ngModel)] -->
+
+<input type="text" [(ngModel)]="bindingData">
+
+<h4>{{bindingData}}</h4>
+
+<form>
+    <input type="text" class="form-control mb-2" [(ngModel)]="model.name" name="fName" placeholder="enter your name">
+    <input type="text" class="form-control mb-2" [(ngModel)]="model.email" name="email" placeholder="enter your email">
+    <input type="text" class="form-control mb-2" [(ngModel)]="model.password" name="password" placeholder="enter your password">
+    <button class="btn btn-success" (click)="handleForm()">Submit</button>
+</form>

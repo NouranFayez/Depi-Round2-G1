@@ -1,0 +1,4 @@
+-- Data Binding ==> one way Binding ==> interpolation {{}}
+                                    ==> Property binding []
+                                    ==> event binding ()
+                ==> two way Binding ==> [] + () = [(ngModel)]   ==> banana in the box  (import FormsModule from @angular/forms)                
