@@ -1,0 +1,7 @@
+-- directives ==> attributes directives ==> ngClass 
+                                            ngStyle
+                                            ngModel
+
+             ==> structure Directives ==> *ngIf
+                                          *ngFor
+                                          *ngSwitch                               

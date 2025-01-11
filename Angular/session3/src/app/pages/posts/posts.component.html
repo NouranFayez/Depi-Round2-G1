@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <input type="text" >
+        </div>
+        <div class="col-12 col-md-6 col-xl-3" *ngFor="let post of posts ;
+         let i = index ;
+         let f = first ; 
+         let l = last ;
+         let e = even ;
+         let oddNum = odd ;
+         let c = count">
+            <div class="card border-3" [ngClass]="{'border-primary' : i==2 , 
+            'border-danger': oddNum , 'bg-warning' : f }" >
+                <img src="images/natural.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5>{{post.title}}</h5>
+                    <h3>Index = {{i}}</h3>
+                    <h3>first = {{f}}</h3>
+                    <h3>last = {{l}}</h3>
+                    <h3>even = {{e}}</h3>
+                    <h3>odd = {{oddNum}}</h3>
+                    <h3>count = {{c}}</h3>
+                    <p>{{post.body}}</p>
+                    <button class="btn " [ngClass]="{'btn-primary' : e , 'btn-danger' : oddNum}" routerLink="single-post">single post</button>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>

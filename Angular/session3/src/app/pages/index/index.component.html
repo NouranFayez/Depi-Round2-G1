@@ -1,0 +1,54 @@
+
+<div class="container">
+    <!-- <div [ngClass]="elementStyle">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, id.
+    </div>
+    <div [ngClass]="{'alert' : true ,
+     'alert-primary' : alertStyle ,
+     'alert-secondary' : !alertStyle }">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, id.
+    </div>
+
+    <button class="btn btn-primary" (click)="alertStyle = !alertStyle">Click to change the alert style</button>
+
+    <h3 [ngClass]="(alertStyle && arr.length > 2) ?  'text-success' : 'text-danger' ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officia!</h3>
+
+
+    <h5 [ngStyle]="{'background-color' : customBgStyle}">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, dolorem!
+
+    </h5>
+    <button class="btn btn-primary" (click)="customBgStyle = 'blue'">change to blue</button>
+    <button class="btn btn-success" (click)="customBgStyle = 'green'">change to green</button> -->
+
+
+    <button class="btn btn-secondary" (click)="isAvaliable = false ">change to is avaliable to false</button>
+    <button class="btn btn-danger" (click)="alertStyle = true">alert style</button>
+    <!-- <div class="alert alert-primary" *ngIf="isAvaliable && alertStyle ; else falseCondition ">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptas!
+    </div>
+
+
+    <ng-template #falseCondition>
+        <div class="alert alert-danger" >
+            in false condition
+        </div>
+    </ng-template> -->
+
+
+    <div class="alert alert-primary" *ngIf="alertStyle ;  then trueCondition ;  else falseCondition ">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptas!
+    </div>
+
+
+    <ng-template #falseCondition>
+        <div class="alert alert-danger" >
+            in false condition
+        </div>
+    </ng-template>
+
+
+    <ng-template #trueCondition>
+        <h4>h4 inside ng template true condition</h4>
+    </ng-template>
+</div>
