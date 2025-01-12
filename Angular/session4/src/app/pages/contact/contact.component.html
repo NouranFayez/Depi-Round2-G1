@@ -1,0 +1,22 @@
+<div class="alert alert-primary" [ngSwitch]="num">
+    <ng-container *ngFor="let n of numArray">
+        <h3 *ngSwitchCase="n" >num = {{n}}</h3>
+
+    </ng-container>
+    <div *ngFor="let n of numArray">
+        <h3 *ngSwitchCase="n" >num = {{n}}</h3>
+
+    </div>
+
+
+    <ng-container>
+        <h5> ng container Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, nesciunt?</h5>
+    </ng-container>
+    <div>
+        <h5>Div tag Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, nesciunt?</h5>
+    </div>
+    <!-- <h3 *ngSwitchCase="2">num = 2</h3>
+    <h3 *ngSwitchCase="3">num = 3</h3> -->
+
+    <h3 *ngSwitchDefault>Invalid Number</h3>
+</div>

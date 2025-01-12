@@ -1,0 +1,22 @@
+<!-- pipe ==> text formating -->
+<!-- date pipe ==> https://angular.dev/api/common/DatePipe?tab=usage-notes -->
+<h3>{{currentDate | date : 'shortDate'}}</h3>
+<h3>{{currentDate | date : "short"}}</h3>
+
+<h4>{{currentDate | date : "MM-YYYY"}}</h4>
+
+<h5>{{appName | lowercase}}</h5>
+<h5>{{appName | uppercase}}</h5>
+
+<h5 class="text-primary">{{appName | slice : 0 : 7}}</h5>
+<h5 class="text-primary">{{appName | slice : -8}}</h5>
+<h5 class="text-primary">{{appName | slice : 3 : 8}}</h5>
+
+<h6 class="text-danger" *ngFor="let course of courses | slice : 0 : 3">{{course}}</h6>
+<h6 class="text-success" *ngFor="let course of courses | slice : -2">{{course}}</h6>
+
+<h3>{{obj | json}}</h3>
+
+<!-- currency  , number , async -->
+
+<!-- 1100 ==> 1.1k -->

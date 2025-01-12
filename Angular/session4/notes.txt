@@ -1,0 +1,12 @@
+-- pipes ==> date , lowercase , uppercase , slice , json 
+            currency , number , async
+
+
+-- directive  ==> structure directive ==> *ngIf 
+                                           *ngFor
+                                           ngswitch
+
+
+-- Component Communication ==> parent send data to child ==> @Input() 
+                           ==> child send data to parent ==> @Output()
+                           ==> global data ==> service                                          

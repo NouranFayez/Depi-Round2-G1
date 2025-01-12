@@ -1,0 +1,13 @@
+<form class="row">
+    <div class="col-12 col-md-6">
+        <label>Name</label>
+        <input type="text" [(ngModel)]="data.name" name="name" class="form-control">
+    </div>
+    <div class="col-12 col-md-6">
+        <label>Email</label>
+        <input type="text" [(ngModel)]="data.email" name="email" class="form-control">
+    </div>
+    <div>
+        <button class="btn btn-primary" (click)="handleSubmit()">Send User</button>
+    </div>
+</form>
