@@ -1,0 +1,18 @@
+<div class="row gy-3">
+    <input type="text" class="form-control" #inputVal (input)="handleInput(inputVal)">
+    <div class="col-12">
+        <h3>{{global.userName}}</h3>
+        <h2 class="text-center text-primary">Posts</h2>
+    </div>
+    <div class="col-12 col-md-6 col-xl-3" *ngFor="let post of posts">
+        <div class="card">
+            <div class="card-body">
+                <h3>{{post.title}}</h3>
+                <p>
+                    {{post.body}}
+                    <button class="btn btn-primary mt-3" routerLink="/single-post/{{post.id}}">Single post</button>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

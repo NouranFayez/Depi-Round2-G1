@@ -1,0 +1,20 @@
+
+
+<div class="row">
+    <div class="col-12 col-lg-8">
+        <div class="card">
+            <div class="card-body">
+                <h3>{{postData?.title}}</h3>
+                <p>
+                    {{postData?.body}}
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-4">
+        <h3>
+            latest posts
+        </h3>
+        <h6 class="text-primary" routerLink="/single-post/{{post.id}}" *ngFor="let post of posts | slice : -3">{{post.title}}</h6>
+    </div>
+</div>

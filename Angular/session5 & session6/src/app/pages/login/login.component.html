@@ -1,0 +1,52 @@
+
+
+<!-- Template Driven Form ==> ngModel (two way binding) -->
+
+<form  class="row mt-3 gy-3" #loginForm="ngForm" (ngSubmit)="handleSubmit(loginForm)">
+    <div class="alert alert-primary">
+        <h5>value {{loginForm.value | json}}</h5>
+        <h5>submitted {{loginForm.submitted}}</h5>
+        <h5>invalid {{loginForm.invalid}}</h5>
+        <h5>valid {{loginForm.valid}}</h5>
+        <h5>touched {{loginForm.touched}}</h5>
+        <h5>dirty {{loginForm.dirty}}</h5>
+    </div>
+    <div class="col-12 col-md-6">
+        <input type="email" [(ngModel)]="model.email" 
+        required  minlength="10" email 
+         name="email" placeholder="Enter Your Email" 
+          #userEmail="ngModel" class="form-control">
+         <div class="alert alert-danger" *ngIf="loginForm.submitted && userEmail.invalid ">
+           <p *ngIf="userEmail?.errors?.['required']">email is required</p>
+           <p *ngIf="userEmail?.errors?.['minlength']">minlength = 10</p>
+           <p *ngIf="userEmail?.errors?.['email']">enter a valid email</p>
+         </div>
+            <!-- <div class="alert alert-danger">
+                <small class="d-block"> valid {{userEmail.valid}}</small>
+                <small class="d-block"> invalid {{userEmail.invalid}}</small>
+                <small class="d-block"> touched {{userEmail.touched}}</small>
+                <small class="d-block"> dirty {{userEmail.dirty}}</small>
+                <small class="d-block"> error {{userEmail.errors | json}}</small>
+            </div> -->
+    </div>
+    <div class="col-12 col-md-6">
+        <input type="password" pattern = "[0-9]{2,6}" #userPassword="ngModel"
+         required [(ngModel)]="model.password" name="password" placeholder="Enter Your Password" class="form-control">
+         <div class="alert alert-danger" *ngIf="loginForm.submitted && userPassword.invalid">
+            <p *ngIf="userPassword?.errors?.['required']">password is required</p>
+            <p *ngIf="userPassword?.errors?.['pattern']">enter numbers only</p>
+         </div>
+    </div>
+    <!-- <div class="col-12 col-md-6">
+        <input type="password"  #userConfirmPassword="ngModel"
+         required [(ngModel)]="model.confirmPassword" name="confirmPassword" minlength="3"
+          placeholder="Enter Your confirm Password" class="form-control">
+         <div class="alert alert-danger" *ngIf="(userConfirmPassword.dirty || loginForm.submitted) && userConfirmPassword.invalid">
+            <p *ngIf="userConfirmPassword?.errors?.['required']">confirm password is required</p>
+            <p *ngIf="userConfirmPassword?.errors?.['minlength']">min length = 3</p>
+         </div>
+    </div> -->
+    <div class="col-12">
+        <button class="btn btn-success" >Login</button>
+    </div>
+</form>
