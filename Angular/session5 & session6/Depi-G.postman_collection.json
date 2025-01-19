@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "967935a8-79ca-4eaa-8418-2a734ef4c037",
+		"name": "Depi-G",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37417742",
+		"_collection_link": "https://techs-experts.postman.co/workspace/techs-experts-Workspace~a5e143e8-f580-4c7a-811c-763892846937/collection/37417742-967935a8-79ca-4eaa-8418-2a734ef4c037?action=share&source=collection_link&creator=37417742"
+	},
+	"item": [
+		{
+			"name": "login Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"mohd@es.truee\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://full.faedg.com/api/client/customer_login",
+					"protocol": "https",
+					"host": [
+						"full",
+						"faedg",
+						"com"
+					],
+					"path": [
+						"api",
+						"client",
+						"customer_login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"Customers\",\r\n    \"last_name\": \"Account\",\r\n    \"phone\": \"01234567896\",\r\n    \"email\": \"nouran@user.com\",\r\n    \"password\": \"123456\",\r\n    \"confirm_password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://full.faedg.com/api/client/customer_register",
+					"protocol": "https",
+					"host": [
+						"full",
+						"faedg",
+						"com"
+					],
+					"path": [
+						"api",
+						"client",
+						"customer_register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
