@@ -10,6 +10,8 @@ import { authInterceptor } from './interceptor/auth.interceptor';
 import { HomeComponent } from './pages/home/home.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { UserImageComponent } from './pages/user-image/user-image.component';
+import { DashboardTestComponent } from './pages/dashboard-test/dashboard-test.component';
+import { ErrorpageComponent } from './pages/errorpage/errorpage.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { UserImageComponent } from './pages/user-image/user-image.component';
     NavbarComponent,
     LoginComponent,
     HomeComponent,
-    UserImageComponent
+    UserImageComponent,
+    DashboardTestComponent,
+    ErrorpageComponent
     
   ],
   imports: [

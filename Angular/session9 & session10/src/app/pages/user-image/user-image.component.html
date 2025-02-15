@@ -2,7 +2,7 @@
     <form class="row">
         <div class="col-12">
             <i class="fa-solid fa-cloud-arrow-up display-3" (click)="handleClick()"></i>
-            <input type="file" #imgInput id="imgInput" class="form-control" (change)="handleChangeImg($event)" hidden>
+            <input type="file" id="imgInput" class="form-control" (change)="handleChangeImg($event)" hidden>
         </div>
 
         <img src="{{imgLink}}" class="rounded-circle" width="200" height="200" alt="">

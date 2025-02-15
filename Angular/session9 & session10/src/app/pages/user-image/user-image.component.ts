@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, viewChild } from '@angular/core';
 import { GlobalService } from '../../services/global.service';
 
 @Component({
@@ -10,7 +10,7 @@ import { GlobalService } from '../../services/global.service';
 export class UserImageComponent {
   imgLink = null
 
-  @ViewChild('imgInput') imgElement!: ElementRef;
+  // @viewChild('imgInput' , {static: false}) imgElement! :ElementRef
   constructor(private global:GlobalService
   ){
 

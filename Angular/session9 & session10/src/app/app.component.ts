@@ -10,7 +10,7 @@ import { GlobalService } from './services/global.service';
 export class AppComponent {
   title = 'session9';
 
-  constructor(private global : GlobalService){
+  constructor(public global : GlobalService){
     console.log("Angular")
   }
 

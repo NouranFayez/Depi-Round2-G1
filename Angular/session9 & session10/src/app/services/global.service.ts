@@ -11,6 +11,7 @@ export class GlobalService {
   userToken : any = null
   userData : any = null
   isLogin = false
+  navbarFlag = true
 
   constructor(private http: HttpClient) { }
 
